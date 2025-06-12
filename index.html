@@ -4,21 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Plástico Transforma</title>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="src/CreateJava/funcao.js"></script>
     <link rel="stylesheet" href="src/stylesheet.css" />
 </head>
 <body>
 
   <div class="navbar">
     <div class="logo">
+       <a href="#" onclick="voltarInicio()">
       <img src="src/assets/logo_verde.png" alt="Logo" height="40" />
+    </a>
       <h4>PointRecycle</h4>
     </div>
 
     <div class="menu">
-      <a href="#">Quem Somos</a>
-      <a href="#">Nossa Causa</a>
+      <a href="#" onclick="mostrarEquipe()">Quem Somos</a>
+      <a href="#" onclick="mostrarCausa()">Nossa Causa</a>
 
       <div class="menu-item">
         <a href="#">Iniciativas</a>
@@ -45,8 +47,5 @@
   <!-- Conteúdo dinâmico -->
   <div id="conteudo"></div>
 
-  <script src="src/CreateJava/funcao.js">
-    
-  </script>
 </body>
 </html>

@@ -109,3 +109,141 @@
     .ecoponto p {
       margin-left: 10px;
     }
+    /* QUEM SOMOS */
+    
+    .equipe {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.membro {
+  text-align: center;
+  max-width: 200px;
+}
+
+.membro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #66bb6a;
+  margin-bottom: 10px;
+}
+
+.membro h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.membro p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* NOSSA CAUSA */
+:root {
+  --verde-claro: #e6f4ea;
+  --verde-principal: #2e7d32;
+  --verde-destaque: #66bb6a;
+  --texto-base: #2f2f2f;
+  --fundo-branco: #ffffff;
+  --sombra: rgba(0, 0, 0, 0.06);
+}
+
+body {
+  background-color: var(--verde-claro);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.causa-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.causa-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--fundo-branco);
+  border: 1px solid var(--verde-destaque);
+  border-left: 6px solid var(--verde-principal);
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 3px 10px var(--sombra);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.causa-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px var(--sombra);
+}
+
+.causa-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--verde-claro);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid var(--verde-principal);
+}
+
+.causa-icon img,
+.causa-icon i {
+  width: 30px;
+  height: 30px;
+  color: var(--verde-principal);
+}
+
+.causa-card .text {
+  font-size: 14px;
+  color: var(--texto-base);
+}
+
+.causa-card strong {
+  display: block;
+  font-size: 15px;
+  color: var(--verde-principal);
+  margin-bottom: 6px;
+}
+
+.home-apresentacao {
+  background-color: #f0fdf4; /* verde bem claro */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.texto-container {
+  max-width: 900px;
+  background-color: #ffffff;
+  border-left: 8px solid #2e7d32;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.texto-container h2 {
+  color: #2e7d32;
+  margin-bottom: 16px;
+  font-size: 26px;
+}
+
+.texto-container p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}

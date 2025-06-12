@@ -1,3 +1,37 @@
+function voltarInicio() {
+  const container = document.getElementById('conteudo');
+  container.innerHTML = `
+    <section class="home-apresentacao">
+      <div class="texto-container">
+        <h2>Transformação Sustentável</h2>
+        <p>
+          A implementação da plataforma de reciclagem trará uma transformação significativa na forma como os cidadãos lidam com o descarte de resíduos, promovendo a separação correta e incentivando a reciclagem de maneira mais eficiente.
+          Através da identificação automatizada dos resíduos e da localização de pontos de coleta seletiva, a plataforma proporcionará maior comodidade e agilidade para os usuários.
+        </p>
+      </div>
+    </section>
+    
+    <section class="home-apresentacao">
+      <div class="texto-container">
+        <h2>Resultado a Longo-prazo</h2>
+        <p>
+          Os resultados esperados incluem uma redução no volume de resíduos enviados aos aterros sanitários, um aumento nas taxas de reciclagem, e uma maior conscientização ambiental, com benefícios a longo prazo tanto para o meio ambiente quanto para a sociedade, como a diminuição da poluição e a promoção de um ciclo sustentável de consumo e descarte.         </p>
+      </div>
+    </section>
+    
+    <section class="home-apresentacao">
+      <div class="texto-container">
+        <h2>Contribuição da comunidade</h2>
+        <p>
+        Promover a conscientização e a participação dos cidadãos na construção de um futuro mais sustentável, mesmo que a tecnologia desempenhe um papel crucial na melhoria da reciclagem e no gerenciamento de resíduos, ela deve ser complementada com a educação ambiental e o engajamento da comunidade. Devemos contribuir para um ambiente mais limpo, saudável e equilibrado, ao mesmo tempo em que se promove uma	transformação cultural voltada para práticas mais conscientes de consumo e descarte. 
+
+
+        </p>
+      </div>
+    </section>
+  `;
+}
+
 const ecopontos = {
   pilhas: [
     { nome: "Secretaria de Meio Ambiente", endereco: "Av. Cerro Azul, 544", telefone: "3293-8771" },
@@ -43,4 +77,75 @@ function mostrarEcopontos(tipo) {
       </div>
     `;
   });
+}
+
+function mostrarEquipe() {
+  const container = document.getElementById('conteudo');
+  container.innerHTML = `
+    <h2>Quem Somos</h2>
+    <div class="equipe">
+      <div class="membro">
+        <img src="src/assets/heitorAvatar.jpg" alt="Pessoa 1" />
+        <h3>Heitor Couto</h3>
+        <p>Engenharia de Software</p>
+        <p>3º Semestre</p>
+      </div>
+      <div class="membro">
+        <img src="src/assets/talisAvatar.jpg" alt="Pessoa 2" />
+        <h3>Talis Sossai</h3>
+        <p>Engenharia de Software</p>
+        <p>3º Semestre</p>
+      </div>
+      <div class="membro">
+        <img src="src/assets/mefhAvatar.jpg" alt="Pessoa 3" />
+        <h3>Matheus Mansano</h3>
+        <p>Engenharia de Software</p>
+        <p>3º Semestre</p>
+      </div>
+    </div>
+  `;
+}
+
+function mostrarCausa() {
+  const container = document.getElementById('conteudo');
+  container.innerHTML = `
+    <div class="causa-grid">
+      <div class="causa-card">
+        <div class="causa-icon">
+          <img src="src/assets/iconColect.png" alt="Ícone Localização" />
+        </div>
+        <div class="text">
+          <strong>LOCALIZAR PONTOS DE COLETA:</strong>
+          <p>Isso facilita o processo de busca a locais adequados para o descarte correto e sustentável para a comunidade.</p>
+        </div>
+      </div>
+      <div class="causa-card">
+        <div class="causa-icon">
+          <img src="src/assets/iconInfo.png" alt="Ícone Informações" />
+        </div>
+        <div class="text">
+          <strong>INFORMAÇÕES DETALHADAS:</strong>
+          <p>Além de fornecer a localização, informações sobre os tipos de materiais recicláveis aceitos ajudam os usuários a se prepararem adequadamente para o descarte.</p>
+        </div>
+      </div>
+      <div class="causa-card">
+        <div class="causa-icon">
+          <img src="src/assets/iconLocal.png" alt="Ícone Rotas" />
+        </div>
+        <div class="text">
+          <strong>ROTAS E DIREÇÕES:</strong>
+          <p>Permite que os usuários encontrem rotas e contatos para os pontos de coleta, tornando o processo mais conveniente e eficiente.</p>
+        </div>
+      </div>
+      <div class="causa-card">
+        <div class="causa-icon">
+          <img src="src/assets/iconSustentavel.png" alt="Ícone Colaboração" />
+        </div>
+        <div class="text">
+          <strong>COLABORAÇÃO SUSTENTÁVEL:</strong>
+          <p>Ao incentivar a participação coletiva, contribui para um esforço em prol do meio ambiente e na conscientização pública e com o meio ambiente.</p>
+        </div>
+      </div>
+    </div>
+  `;
 }

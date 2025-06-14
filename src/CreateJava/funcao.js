@@ -149,3 +149,8 @@ function mostrarCausa() {
     </div>
   `;
 }
+
+window.onload = function () {
+  voltarInicio();
+};
+
